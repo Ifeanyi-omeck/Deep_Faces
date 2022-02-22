@@ -6,4 +6,5 @@ Currently work in progress:
 detect a human face and predicts gender
 
 ### What is contained in this Repo?
-* Validation: folder containing images.
+* ml_model:  containing saved deep learning models.
+* notebooks: notebook containing code for different models
