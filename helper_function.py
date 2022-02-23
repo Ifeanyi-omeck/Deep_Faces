@@ -1,6 +1,12 @@
 import tensorflow as tf
 import random
-import pandas as pd 
+import pandas as pd
+import os
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+import itertools
+from sklearn.metrics import confusion_matrix
+
 
 
 def image_reader(target_folder, target_class):
@@ -93,8 +99,7 @@ def load_custom_images(custom_path, model, class_names, class_mode):
 
 
 
-import itertools
-from sklearn.metrics import confusion_matrix
+
 
 # Our function needs a different name to sklearn's plot_confusion_matrix
 def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_size=15):
